@@ -1,6 +1,6 @@
 <div class="box">
 <h2><%= l(:label_avatar)%></h2>
-<div style="width: 128px; height: 128px; border: 1px silver solid;">
+<div style="width: 128px; height: 128px; border: 1px silver solid; border-radius: 25px;">
 <%= avatar(@user, :size => "128") %>
 </div><br>
 <%= form_tag( { :action => 'save_avatar', :id => @user.id }, :multipart => true) do %>
